@@ -21,3 +21,8 @@
 - depricated w/ sem ver
 - codemod: delete/ change depricated code 
 - package-lock.json: keeps track of all dependencies among each other version
+
+- express is wrapper around nodejs
+- nodejs web app framework
+- creates structure reqHandler
+- alternative koa, hono, fastify
