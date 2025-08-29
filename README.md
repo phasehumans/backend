@@ -7,7 +7,7 @@
 - bun: drop-in replacement for node
 
 
-## Exceute Wrapper function
+## ExecuteWrapper function
 - node binds code with wrapper fn -> execute() and runs code
 - execute(exports, require, module, __filename, __dirname) {// actual code} <--- executeWrapper fn
     - require  fn: to import module, w/ module id as args, start w/ . then check in exports {}, or w/o . then checks in node built-in module
@@ -18,7 +18,7 @@
 - wrapper fn args: exports, require, module, __filename, __dirname
 
 
-- depricated w/ sem ver
+- depricated w/ sem var
 - codemod: delete/ change depricated code 
 - package-lock.json: keeps track of all dependencies among each other version
 
@@ -26,3 +26,21 @@
 - nodejs web app framework
 - creates structure reqHandler
 - alternative koa, hono, fastify
+
+
+# Node Internals
+
+## 
+- init project
+- executes top level code
+- event callbacks register
+- event loop starts
+    - phases of event loop: 
+    - executes expired timer callbacks ---> setTimeout, setInterval
+    - IO pooling -- input/ output cb
+    - setImmediate cb
+    - close cb
+    - checks for pending cb, if then yes then repeat
+    - if no then exit event loop
+
+
