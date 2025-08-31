@@ -9,4 +9,3 @@ fs.writeFile('./sample.txt', "Hello World", () => {})
 console.log({__filename, __dirname})
 
 console.log(x.add(3, 7));
-

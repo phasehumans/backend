@@ -1,16 +1,20 @@
 const fs= require('fs')
 
+
+setImmediate(() => {
+    console.log("SetImmediate Upper");
+    
+})
+
 setTimeout(() => {
     console.log("SetTimeout");
     
 }, 0)
 
-
 setImmediate(() => {
-    console.log("SetInterval");
+    console.log("SetImmediate");
     
 })
-
 
 fs.readFile("sample.txt", "utf-8", () => {
     setTimeout(() => {
@@ -18,13 +22,17 @@ fs.readFile("sample.txt", "utf-8", () => {
         
     }, 0)
 
-
     setImmediate(() => {
-        console.log("SetInterval 2");
+        console.log("SetImmediate 2");
         
     })
 })
 
+
+setImmediate(() => {
+    console.log("SetImmediate Lower");
+    
+})
 
 // console.log("Hello World");
 
@@ -32,8 +40,10 @@ fs.readFile("sample.txt", "utf-8", () => {
 /* 
 Hello World
 SetTimeout
-SetInterval
-SetInterval 2
+SetImmediate Upper
+SetImmediate
+SetImmediate Lower
+SetImmediate 2
 SetTimeout 2
 */
 
@@ -41,9 +51,11 @@ SetTimeout 2
 /* 
 w/o "hello"
 
-SetInterval
 SetTimeout
-SetInterval 2
-SetTimeout 2
+SetImmediate Upper
+SetImmediate
+SetImmediate Lower
+SetImmediate 2
+SetTimeout 2 
 
 */
