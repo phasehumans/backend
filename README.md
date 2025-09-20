@@ -1,6 +1,6 @@
 # Backend
 
-## NodeJS Internals 
+## NodeJS
 - js in node: single threaded + thread pool & libuv
 - js runtime env (setup that runs code)
 - built w/ v8 engine & libuv (non blocking I/O)
