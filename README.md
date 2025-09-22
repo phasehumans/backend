@@ -38,7 +38,7 @@
     - else exit event loop
 
 
-## Expess
+## Express
 - express wrapper around nodejs
 - nodejs web app framework
 - creates structure reqHandler
