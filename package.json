@@ -2,13 +2,13 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/almosthumans/Backend#readme",
+  "homepage": "https://github.com/phasehumans",
   "bugs": {
-    "url": "https://github.com/almosthumans/Backend/issues"
+    "url": "https://github.com/phasehumans/backend/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/almosthumans/Backend.git"
+    "url": "git+https://github.com/phasehumans/backend.git"
   },
   "license": "ISC",
   "author": "",
@@ -19,6 +19,7 @@
     "start": "node server.js"
   },
   "dependencies": {
+    "commander": "^14.0.1",
     "express": "^5.1.0"
   }
 }

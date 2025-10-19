@@ -5,7 +5,7 @@
 - js runtime env (setup that runs code)
 - built w/ v8 engine & libuv (non blocking I/O)
 - c++ bindings for OS level fn/ sys call
-- alternative bun: drop-in replacement for node
+- alternative bun, deno
 - use for SSR (web page generated on server and sent), opp to client side rendering
 - v8 engine: JS code → Parser → AST → Ignition (bytecode) → TurboFan (optimized machine code) → CPU executes
 - lifecycle: Run → Wrap → Parse/Compile → Execute → Async to libuv → Event Loop + Microtasks → Exit
@@ -36,14 +36,4 @@
     - close cb (clean up fn)
     - checks for pending cb, if yes then repeat event loop
     - else exit event loop
-
-
-## Express
-- express wrapper around nodejs
-- nodejs web app framework
-- creates structure reqHandler
-- alternative koa, hono, fastify
-- why express?
-    - simple routing
-    - middleware
 
