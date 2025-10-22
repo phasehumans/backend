@@ -45,4 +45,10 @@ Route
 - path / endpoint that define how incoming req is handled by server
 - direct http req to appropriate handler fn or resources
 
+Headers
+- extra metadata of req or res
+- key value pairs sent by client and server (attach bydefault)
+- req headers and res headers
+
+
 */
