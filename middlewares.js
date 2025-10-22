@@ -3,6 +3,14 @@ Middleware
 - req, res, next (to transfer to next miidleware or controller)
 - app.use(middleware) --> applies to all routes below it
 
+- can modify req or res obj
+- end req-res cycle
+- calling next middleware fn in stack (forward req to routeHandler)
+
+
+commonly used middleware
+- express.json() / bodyParser.json()
+- cors
 
 */ 
 
@@ -18,7 +26,7 @@ function check (req, res, next){
         next()
     }
     else{
-        res.json({
+        res .json({
             msg: "not allowed"
         })
     }
