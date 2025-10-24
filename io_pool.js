@@ -11,3 +11,13 @@ setTimeout(() => {
 }, 0);
 
 console.log("End");
+
+
+/* 
+- start
+- end
+- file read done
+- timer done
+
+
+*/

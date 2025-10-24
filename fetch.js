@@ -7,3 +7,22 @@ Fetch
 
 
 */
+
+
+const express= require('express')
+const app= express()
+
+
+app.use(express.json())
+
+app.get('/getinfo', async (req, res) => {
+    const response= await fetch("https://dummy-json.mock.beeceptor.com")
+    const jsonres= response.json()
+
+    res.json({
+        result: jsonres
+    })
+})
+
+
+app.listen(3000)
