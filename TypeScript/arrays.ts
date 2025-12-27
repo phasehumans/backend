@@ -12,3 +12,6 @@ function getMax (nums: number[]){
 
 
 const res = getMax([1,2,3,4])
+
+
+// multi address - > adress[]
